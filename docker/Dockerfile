@@ -17,6 +17,7 @@ RUN apk --no-cache add ca-certificates
 
 COPY --from=builder /app/server /server
 COPY --from=builder /app/templates /templates
+COPY --from=builder /app/assets /assets
 
 USER nobody:nogroup
 

@@ -11,5 +11,5 @@ sh:
 	docker-compose exec -it app sh
 
 prod:
-	docker build -t johanbx:prod .
+	docker build -t johanbx:prod -f docker/Dockerfile .
 	docker run -e GIN_MODE=release -p 8080:8080 johanbx:prod

@@ -4,7 +4,13 @@ go • gin • air • live-reload • picocssv2 • htmx • docker
 
 ## Quick start
 
-Run `make dev` and then visit http://localhost:8080
+Start developing with `make dev` and visit http://localhost:8080. Now whenever you are changing any
+code it will recompile and reload the website. To see the logs run `make logs` and to shut down everything
+run `make clean`.
+
+### Production mode
+
+To build for production and then run the final image, run `make prod` and visit http://localhost:8080
 
 ## Requirement
 
